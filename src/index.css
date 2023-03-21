@@ -235,3 +235,12 @@ body {
     height: 100px;
   }
 }
+
+@media (max-width: 450px) {
+  .filter-panel-wrapper {
+    flex-direction: column;
+  }
+  .link {
+    margin: 8px;
+  }
+}

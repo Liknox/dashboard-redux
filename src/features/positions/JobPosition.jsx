@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
-import { Badge } from "../UI/Badge"
-import { Card } from "../UI/Card"
-import { Stack } from "../UI/Stack"
+import { Badge } from "../../UI/Badge"
+import { Card } from "../../UI/Card"
+import { Stack } from "../../UI/Stack"
 
 const JobPosition = ({ id, company, logo, new: isNew, featured, position, role, level, postedAt, contract, location, languages, tools, handleAddFilter }) => {
 	const badges = [].concat(role, level, ...languages, ...tools)
@@ -12,7 +12,7 @@ const JobPosition = ({ id, company, logo, new: isNew, featured, position, role, 
 				<div className="job-position-info">
 					<img className="job-position-avatar" src={logo} alt={company} />
 					<div className="job-position-body">
-						<div className="job-position-company">
+						<div className="job-postion-company">
 							<h3>{company}</h3>
 							{(isNew || featured) && (
 								<Stack>
